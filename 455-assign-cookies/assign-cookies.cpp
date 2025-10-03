@@ -5,13 +5,13 @@ public:
         sort(g.begin(), g.end());
         sort(s.begin(), s.end());
 
-        int total_children=0;
+        
         int i=0, j=0;
 
         while(i<g.size() && j<s.size()){
 
             if(g[i]<=s[j]){
-                total_children+=1;
+                
                 i++;
                 j++;
 
@@ -21,7 +21,7 @@ public:
                 j++;
             }
         }
-        return  total_children;
+        return  i;
 
     }
 };
