@@ -26,7 +26,6 @@ public:
             }
 
             if (pq.empty()) {
-                // Jump time forward to next enqueueTime if no task is available
                 timer = tasks[i][0];
             }
 
